@@ -33,7 +33,8 @@ module.exports = {
         path: `${__dirname}/posts/`,
       },
     },
-    `gatsby-plugin-mdx`,
+    "gatsby-plugin-mdx",
     "gatsby-plugin-root-import",
+    "gatsby-transformer-remark",
   ],
 };
