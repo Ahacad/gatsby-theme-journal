@@ -29,6 +29,7 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@iconify/react": "^3.1.0",
     "autoprefixer": "^10.4.0",
     "gatsby-plugin-postcss": "^5.4.0",
     "gatsby-plugin-root-import": "^2.0.8",
