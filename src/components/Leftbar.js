@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Icon } from "@iconify/react";
 
 const BarItem = ({ children }) => {
   return (
@@ -20,10 +21,26 @@ const Leftbar = () => {
       <BarItem>关于</BarItem>
       <BarItem>Tags</BarItem>
       <BarItem>友链</BarItem>
-      <BarItem>Icons (TODO)</BarItem>
-      <div class="absolute bottom-10 w-full p-4 font-montserrat text-xs">
-        © 2019-{new Date().getFullYear()} ahacad. <br />
-        All rights reserved.
+
+      <div class="absolute bottom-10 w-full p-4  text-xs">
+        <div class="flex justify-end mb-2">
+          <div class="cursor-pointer ml-1">
+            <Icon icon="mdi:github" width="24" />
+          </div>
+          <div class="cursor-pointer ml-1">
+            <Icon icon="akar-icons:telegram-fill" width="24" />
+          </div>
+          <div class="cursor-pointer ml-1">
+            <Icon icon="mdi:twitter" width="24" />
+          </div>
+          <div class="cursor-pointer ml-1">
+            <Icon icon="mdi:rss-box" width="24" />
+          </div>
+        </div>
+        <div class="font-montserrat">
+          © 2019-{new Date().getFullYear()} ahacad. <br />
+          All rights reserved.
+        </div>
       </div>
     </div>
   );
