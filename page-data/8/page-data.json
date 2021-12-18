@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-js",
+    "path": "/8/",
+    "result": {"data":{"markdownRemark":{"html":"<p>hello world</p>","frontmatter":{"date":"2021-12-01"}}},"pageContext":{"slug":"/8/"}},
+    "staticQueryHashes": []}
