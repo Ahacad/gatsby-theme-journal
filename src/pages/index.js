@@ -6,7 +6,7 @@ import tit from "ap-style-title-case";
 import SEO from "src/components/Seo";
 import { graphql } from "gatsby";
 
-const PostCard = ({ post }) => {
+const PostCard = ({ post, index }) => {
   return (
     <div class="w-full min-h-[10rem] hover:bg-gray-100 duration-500 cursor-pointer p-8 group border-b-2 border-gray-50 flex justify-between">
       <div class="flex flex-col justify-center pr-8">
@@ -22,7 +22,10 @@ const PostCard = ({ post }) => {
       </div>
       <div class="shrink-0 w-60 bg-blue-30 flex flex-col justify-center">
         <img
-          src="https://source.unsplash.com/random"
+          src={
+            post.node.frontmatter.cover ||
+            `https://source.unsplash.com/random?sig=${index}`
+          }
           class="w-60 h-32 object-cover "
         />
       </div>
@@ -37,8 +40,8 @@ const IndexPage = ({ data }) => {
       <Layout>
         <Leftbar />
         <div class="h-screen col-span-2 shadow-xl mt-6r no-scrollbar overflow-scroll">
-          {posts.map((post) => {
-            return <PostCard post={post} />;
+          {posts.map((post, index) => {
+            return <PostCard post={post} index={index} />;
           })}
         </div>
         <Rightbar />
@@ -68,6 +71,7 @@ export const pageQuery = graphql`
             title
             date(formatString: "YYYY-MM-DD")
             description
+            cover
           }
         }
       }
