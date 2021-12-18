@@ -3,8 +3,7 @@ import Layout from "src/components/Layout";
 import Leftbar from "src/components/Leftbar";
 import Rightbar from "src/components/Rightbar";
 import tit from "ap-style-title-case";
-import SEO from "src/components/Seo";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 const PostCard = ({ post, index }) => {
   return (
@@ -41,7 +40,11 @@ const IndexPage = ({ data }) => {
         <Leftbar />
         <div class="h-screen col-span-2 shadow-xl mt-6r no-scrollbar overflow-scroll">
           {posts.map((post, index) => {
-            return <PostCard post={post} index={index} />;
+            return (
+              <Link to={post.node.fields.slug}>
+                <PostCard post={post} index={index} />
+              </Link>
+            );
           })}
         </div>
         <Rightbar />
@@ -72,6 +75,9 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             description
             cover
+          }
+          fields {
+            slug
           }
         }
       }
