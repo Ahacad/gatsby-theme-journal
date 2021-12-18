@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Icon } from "@iconify/react";
+import { Link } from "gatsby";
 
 const BarItem = ({ children }) => {
   return (
@@ -12,12 +13,14 @@ const BarItem = ({ children }) => {
 const Leftbar = () => {
   return (
     <div class="text-right relative">
-      <div class="font-montserrat h-36 flex flex-col justify-center py-4 pr-6 bg-gray-50 mt-6 border-r-4 border-blue-300">
-        <div>
-          <div class="text-3xl">Ahacad</div>
-          <div class="text-xl">computer assissted design</div>
+      <Link to="/">
+        <div class="font-montserrat h-36 flex flex-col justify-center py-4 pr-6 bg-gray-50 mt-6 border-r-4 border-blue-300">
+          <div>
+            <div class="text-3xl">Ahacad</div>
+            <div class="text-xl">computer assissted design</div>
+          </div>
         </div>
-      </div>
+      </Link>
       <BarItem>关于</BarItem>
       <BarItem>Tags</BarItem>
       <BarItem>友链</BarItem>
