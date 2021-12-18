@@ -14,7 +14,7 @@ const Post = ({ data, pageContext }) => {
       <Layout>
         <Leftbar />
         <div
-          class="col-span-2 p-8"
+          class="col-span-2 p-8 h-screen shadow-xl overflow-scroll no-scrollbar"
           dangerouslySetInnerHTML={{ __html: post.html }}
         ></div>
         <Rightbar />
