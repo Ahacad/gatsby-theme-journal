@@ -35,7 +35,9 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     "gatsby-plugin-root-import",
-    "gatsby-transformer-remark",
+    {
+      resolve: "gatsby-transformer-remark",
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
