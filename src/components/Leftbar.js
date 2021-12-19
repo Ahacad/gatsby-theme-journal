@@ -32,9 +32,9 @@ const Leftbar = () => {
           </div>
         </div>
       </Link>
-      <BarItem>关于</BarItem>
+      <BarItem>About</BarItem>
       <BarItem>Tags</BarItem>
-      <BarItem>友链</BarItem>
+      <BarItem>Friends sites</BarItem>
 
       <div class="absolute bottom-10 w-full p-4  text-xs">
         <div class="flex justify-end mb-2">
