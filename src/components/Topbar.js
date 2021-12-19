@@ -77,7 +77,9 @@ const Topbar = () => {
           onClick={handleToggleSidebar}
         />
         <div class="w-full flex justify-center">
-          <span class="font-montserrat text-xl">Ahacad</span>
+          <Link to="/">
+            <span class="font-montserrat text-xl">Ahacad</span>
+          </Link>
         </div>
       </div>
     </div>
