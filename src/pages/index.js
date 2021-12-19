@@ -9,26 +9,48 @@ deckDeckGoHighlightElement();
 
 const PostCard = ({ post, index }) => {
   return (
-    <div class="w-full min-h-[10rem] hover:bg-gray-100 duration-500 cursor-pointer p-8 group border-b-2 border-gray-50 flex justify-between">
-      <div class="flex flex-col justify-center pr-8">
-        <div class="text-3xl group-hover:underline group-hover:text-blue-600 ">
-          {tit(post.node.frontmatter.title)}
+    <div>
+      <div class="hidden lg:block w-full min-h-[10rem] hover:bg-gray-100 duration-500 cursor-pointer p-8 group border-b-2 border-gray-50 flex justify-between">
+        <div class="flex flex-col justify-center pr-8">
+          <div class="text-3xl group-hover:underline group-hover:text-blue-600 font-smeibold">
+            {tit(post.node.frontmatter.title)}
+          </div>
+          <div class="text-xl mt-2">
+            {post.node.frontmatter.description || post.node.excerpt}
+          </div>
+          <div class="text-md mt-2 font-montserrat">
+            {post.node.frontmatter.date}
+          </div>
         </div>
-        <div class="text-xl mt-2">
-          {post.node.frontmatter.description || post.node.excerpt}
-        </div>
-        <div class="text-md mt-2 font-montserrat">
-          {post.node.frontmatter.date}
+        <div class="shrink-0 w-60 bg-blue-30 flex flex-col justify-center">
+          <img
+            src={
+              post.node.frontmatter.cover ||
+              `https://source.unsplash.com/random?sig=${index}`
+            }
+            class="w-60 h-32 object-cover "
+          />
         </div>
       </div>
-      <div class="shrink-0 w-60 bg-blue-30 flex flex-col justify-center">
-        <img
-          src={
-            post.node.frontmatter.cover ||
-            `https://source.unsplash.com/random?sig=${index}`
-          }
-          class="w-60 h-32 object-cover "
-        />
+      <div class="block lg:hidden">
+        <div class="">
+          <img
+            src={
+              post.node.frontmatter.cover ||
+              `https://source.unsplash.com/random?sig=${index}`
+            }
+            class="w-full h-44 object-cover"
+          />
+        </div>
+        <div class="p-4 mb-4 shadow">
+          <div class="text-2xl font-semibold">
+            {tit(post.node.frontmatter.title)}
+          </div>
+          <div class="mt-2">
+            {post.node.frontmatter.description || post.node.excerpt}
+          </div>
+          <div class="mt-2">{post.node.frontmatter.date}</div>
+        </div>
       </div>
     </div>
   );
