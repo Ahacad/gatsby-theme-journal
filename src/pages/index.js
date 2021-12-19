@@ -10,7 +10,7 @@ deckDeckGoHighlightElement();
 const PostCard = ({ post, index }) => {
   return (
     <div>
-      <div class="hidden lg:block w-full min-h-[10rem] hover:bg-gray-100 duration-500 cursor-pointer p-8 group border-b-2 border-gray-50 flex justify-between">
+      <div class="hidden lg:flex w-full min-h-[10rem] hover:bg-gray-100 duration-500 cursor-pointer p-8 group border-b-2 border-gray-50 justify-between">
         <div class="flex flex-col justify-center pr-8">
           <div class="text-3xl group-hover:underline group-hover:text-blue-600 font-smeibold">
             {tit(post.node.frontmatter.title)}
