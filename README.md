@@ -7,6 +7,8 @@
   Gatsby theme journal
 </h1>
 
+![](./blog.png)
+
 ## ⚙️ Installation  
 
 ```
