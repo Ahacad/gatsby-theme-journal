@@ -2,6 +2,7 @@
 title: markdown test file
 date: 2021-12-01
 description: a test file for markdown css styles
+cover: ""
 ---
 
 # Testing markdown styles
