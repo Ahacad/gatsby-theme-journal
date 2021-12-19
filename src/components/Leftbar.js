@@ -23,7 +23,7 @@ const Leftbar = () => {
     }
   `);
   return (
-    <div class="text-right relative">
+    <div class="text-right relative hidden lg:block">
       <Link to="/">
         <div class="font-montserrat h-36 flex flex-col justify-center py-4 pr-6 bg-gray-50 mt-6 border-r-4 border-blue-300">
           <div>

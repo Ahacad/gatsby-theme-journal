@@ -23,7 +23,7 @@ const Post = ({ data, pageContext }) => {
     <>
       <Layout>
         <Leftbar />
-        <div class="col-span-2 h-screen shadow-xl overflow-scroll no-scrollbar ">
+        <div class="col-span-4 lg:col-span-2 h-screen shadow-xl overflow-scroll no-scrollbar ">
           <div
             class="h-96 bg-cover bg-center relative"
             style={{

@@ -40,7 +40,7 @@ const IndexPage = ({ data }) => {
     <>
       <Layout>
         <Leftbar />
-        <div class="h-screen col-span-2 shadow-xl mt-6r no-scrollbar overflow-scroll">
+        <div class="h-screen col-span-4 lg:col-span-2 shadow-xl mt-6r no-scrollbar overflow-scroll">
           {posts.map((post, index) => {
             return (
               <Link to={post.node.fields.slug}>
