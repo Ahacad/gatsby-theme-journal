@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://ahacad.github.io`,
+    siteName: "Ahacad",
+    sign: "computer assisted design",
   },
   plugins: [
     "gatsby-plugin-postcss",

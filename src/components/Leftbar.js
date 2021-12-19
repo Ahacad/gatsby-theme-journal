@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Icon } from "@iconify/react";
-import { Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 
 const BarItem = ({ children }) => {
   return (
@@ -11,13 +11,24 @@ const BarItem = ({ children }) => {
 };
 
 const Leftbar = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          siteUrl
+          siteName
+          sign
+        }
+      }
+    }
+  `);
   return (
     <div class="text-right relative">
       <Link to="/">
         <div class="font-montserrat h-36 flex flex-col justify-center py-4 pr-6 bg-gray-50 mt-6 border-r-4 border-blue-300">
           <div>
-            <div class="text-3xl">Ahacad</div>
-            <div class="text-xl">computer assissted design</div>
+            <div class="text-3xl">{data.site.siteMetadata.siteName}</div>
+            <div class="text-xl">{data.site.siteMetadata.sign}</div>
           </div>
         </div>
       </Link>
@@ -55,6 +66,6 @@ const Leftbar = () => {
       </div>
     </div>
   );
-  <div></div>;
 };
+
 export default Leftbar;
