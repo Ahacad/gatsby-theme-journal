@@ -37,6 +37,17 @@ module.exports = {
     "gatsby-plugin-root-import",
     {
       resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              theme: "shades-of-purple",
+              lineNumbers: true,
+            },
+          },
+        ],
+      },
     },
     {
       resolve: `gatsby-plugin-feed`,
