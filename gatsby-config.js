@@ -1,11 +1,11 @@
 module.exports = {
+  pathPrefix: `/gatsby-theme-journal`,
   siteMetadata: {
     siteUrl: `https://ahacad.github.io`,
     siteName: "Ahacad",
     sign: "computer assisted design",
   },
   plugins: [
-    "gatsby-plugin-postcss",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
@@ -14,6 +14,7 @@ module.exports = {
         defer: false,
       },
     },
+    "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
