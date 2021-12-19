@@ -7,7 +7,13 @@
   Gatsby theme journal
 </h1>
 
+Desktop:
+
 ![](./blog.png)
+
+Mobile: 
+
+![](./blog2.png)
 
 ## Features
 
