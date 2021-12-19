@@ -1,18 +1,20 @@
 {
-  "name": "personal",
-  "version": "1.0.0",
+  "name": "gatsby-theme-journal",
+  "version": "0.1.0",
   "private": true,
-  "description": "Personal",
+  "description": "時光荏苒，於此貯存 - A gatsby journal theme, record the moments ...",
   "author": "ahacad",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "gatsby-theme"
   ],
   "scripts": {
     "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "release": "zx scripts/release.mjs"
   },
   "dependencies": {
     "@deckdeckgo/highlight-code": "^3.6.0",
@@ -38,9 +40,13 @@
   "devDependencies": {
     "@iconify/react": "^3.1.0",
     "autoprefixer": "^10.4.0",
+    "bumpp": "^7.1.1",
+    "child_process": "^1.0.2",
+    "fs-extra": "^10.0.0",
     "gatsby-plugin-postcss": "^5.4.0",
     "gatsby-plugin-root-import": "^2.0.8",
     "postcss": "^8.4.5",
-    "tailwindcss": "^3.0.6"
+    "tailwindcss": "^3.0.6",
+    "zx": "^4.2.0"
   }
 }
