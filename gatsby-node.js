@@ -17,7 +17,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { frontmatter: { published: { eq: true } } }) {
         edges {
           node {
             fields {
