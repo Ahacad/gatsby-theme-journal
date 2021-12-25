@@ -3,6 +3,7 @@ title: Berlin — Panorama einer Weltstadt
 date: 2021-11-29
 description: 
 cover: ""
+published: true
 ---
 
 Ob man bei Stehely einen Begriff von der Verberlinerung der Literatur bekommen kann—ganz gewiß, oder man müßte sich täuschen in dieser stummen Bewegungssprache, die einen Haufen von Zeitschriften mit wilder Begier und neidischem Blick zusammenträgt, ihn mit der Linken sichert und mit der Rechten eine nach der andern vor die starren, teilnahmslosen Gesichtszüge hält. Die Eisenstange und das Schloß des Journals scheint mit schwerer Gewalt auch seine Zunge zu fesseln—wer würde hier seinen Nachbar auf eine interessante Notiz aufmerksam machen? Ein feindliches Heer könnte eine Meile von Berlin entfernt sein, kein Mensch würde die Geschichte vortragen, man würde auf den Druck warten und auch dann noch ein Exemplar durch aller Hände wandern lassen—fast in der Weise, wie in Stralow die honetten Leute vor jeder lebhafteren Gruppe vorbeigehen mit dem tröstenden Zuruf, man würd' es ja morgen gedruckt lesen.
