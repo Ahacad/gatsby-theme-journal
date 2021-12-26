@@ -75,6 +75,7 @@ h6 {
   padding: 8px 20px;
   background-color: rgb(249 250 251);
   color: rgb(29 78 216);
+  margin: 1rem 0;
 }
 
 .markdown .contains-task-list li {
