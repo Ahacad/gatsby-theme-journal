@@ -104,3 +104,18 @@ h6 {
   border: 1px solid;
   border-color: rgb(209 213 219);
 }
+.markdown code {
+    font-size: 0.875rem;
+    background-color: #edf0f2;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    border-color: rgb(209 213 219);
+}
+.markdown pre {
+    margin: 1rem 0;
+    font-size: 0.875rem;
+    background-color: #edf0f2;
+    border-radius: 3px;
+    padding: 0.25rem 0.5rem;
+    border-color: rgb(209 213 219);
+}

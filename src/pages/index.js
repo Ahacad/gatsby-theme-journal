@@ -4,8 +4,6 @@ import Leftbar from "src/components/Leftbar";
 import Rightbar from "src/components/Rightbar";
 import tit from "ap-style-title-case";
 import { graphql, Link } from "gatsby";
-import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
-deckDeckGoHighlightElement();
 
 const PostCard = ({ post, index }) => {
   return (

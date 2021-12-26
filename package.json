@@ -17,7 +17,6 @@
     "release": "zx scripts/release.mjs"
   },
   "dependencies": {
-    "@deckdeckgo/highlight-code": "^3.6.0",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "ap-style-title-case": "^1.1.2",
@@ -29,7 +28,6 @@
     "gatsby-plugin-react-helmet": "^5.4.0",
     "gatsby-plugin-sass": "^5.4.0",
     "gatsby-plugin-sitemap": "^5.4.0",
-    "gatsby-remark-highlight-code": "^3.1.0",
     "gatsby-source-filesystem": "^4.4.0",
     "gatsby-transformer-remark": "^5.4.0",
     "react": "^17.0.1",
