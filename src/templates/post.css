@@ -52,12 +52,12 @@ h6 {
 }
 
 .markdown a {
-  color: rgb(29 78 216);
+  border-bottom-width: 6px;
+  transition-duration: 150ms;
+  border-color: rgb(219 234 254);
 }
 .markdown a:hover {
-  color: rgb(59 130 246);
-  text-decoration-line: underline;
-  text-underline-offset: 4px;
+    background-color: rgb(219 234 254);
 }
 
 .markdown ul {
